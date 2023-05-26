@@ -30,7 +30,7 @@
     "ethers": "^5.7.2",
     "fastify": "^4.17.0",
     "jwt-decode": "^3.1.2",
-    "next": "13.4.3",
+    "next": "13.4.5-canary.0",
     "next-auth": "^4.21.0",
     "nx": "16.2.2",
     "persona": "4.8.0-alpha",
@@ -75,8 +75,8 @@
     "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "@types/ua-parser-js": "^0.7.36",
     "@types/react-twitter-auth": "^0.0.4",
+    "@types/ua-parser-js": "^0.7.36",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "@vitest/coverage-c8": "0.31.1",
@@ -124,4 +124,3 @@
   },
   "packageManager": "pnpm@7.32.5"
 }
-
