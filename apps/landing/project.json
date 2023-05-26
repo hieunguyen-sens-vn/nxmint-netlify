@@ -8,7 +8,6 @@
       "executor": "@nx/next:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
-      "dependsOn": ["prebuild"],
       "options": {
         "root": "apps/landing",
         "outputPath": "dist/apps/landing",
