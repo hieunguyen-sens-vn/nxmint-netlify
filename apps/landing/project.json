@@ -8,6 +8,7 @@
       "executor": "@nx/next:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
+      "dependsOn": ["prebuild"],
       "options": {
         "root": "apps/landing",
         "outputPath": "dist/apps/landing",
@@ -18,6 +19,13 @@
           "outputPath": "apps/landing"
         },
         "production": {}
+      }
+    },
+    "prebuild": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node prebuild.js",
+        "cwd": ""
       }
     },
     "dev": {

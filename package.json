@@ -5,7 +5,8 @@
   "scripts": {
     "migrate": "prisma format && env-cmd -f apps/api/.env prisma migrate dev --name",
     "generate": "prisma format && prisma generate",
-    "seed": "npx ts-node prisma/seeds/seed.ts"
+    "seed": "npx ts-node prisma/seeds/seed.ts",
+    "build-landing": "node prebuild.js && pnpm nx build landing"
   },
   "private": true,
   "dependencies": {
@@ -120,5 +121,6 @@
     "os": false,
     "net": false,
     "tls": false
-  }
+  },
+  "packageManager": "pnpm@7.32.5"
 }
