@@ -1,10 +1,7 @@
 console.log('********* PREBUILDING');
 const path = require('node:path');
 const fs = require('fs');
-const { exit } = require('node:process');
 const baseDir = process.cwd();
-
-console.log('prebuild');
 
 const prebuildScripts = async () => {
   const file = path.join(baseDir, '/node_modules', 'next/dist/server/require-hook.js');
@@ -17,5 +14,3 @@ const prebuildScripts = async () => {
 };
 
 prebuildScripts();
-
-exit(0);

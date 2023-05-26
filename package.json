@@ -6,7 +6,7 @@
     "migrate": "prisma format && env-cmd -f apps/api/.env prisma migrate dev --name",
     "generate": "prisma format && prisma generate",
     "seed": "npx ts-node prisma/seeds/seed.ts",
-    "build-landing": "nx clear-cache &&  node prebuild.js && nx run landing:build"
+    "landing-build": "node prebuild.js && nx run landing:build"
   },
   "private": true,
   "dependencies": {

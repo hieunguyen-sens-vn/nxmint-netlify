@@ -52,3 +52,6 @@ artifacts
 
 # Next.js
 .next
+
+# Local Netlify folder
+.netlify
