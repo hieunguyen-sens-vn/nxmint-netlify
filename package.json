@@ -6,7 +6,7 @@
     "migrate": "prisma format && env-cmd -f apps/api/.env prisma migrate dev --name",
     "generate": "prisma format && prisma generate",
     "seed": "npx ts-node prisma/seeds/seed.ts",
-    "build-landing": "nx clear-cache &&  node prebuild.js && nx run landing:build"
+    "build-landing": "node prebuild.js && nx run landing:build"
   },
   "private": true,
   "dependencies": {
@@ -30,7 +30,7 @@
     "ethers": "^5.7.2",
     "fastify": "^4.17.0",
     "jwt-decode": "^3.1.2",
-    "next": "13.4.5-canary.0",
+    "next": "13.4.3",
     "next-auth": "^4.21.0",
     "nx": "16.2.2",
     "persona": "4.8.0-alpha",
