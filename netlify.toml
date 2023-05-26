@@ -1,3 +1,3 @@
 [build]
-  command = "pnpm build-landing"
+  command = "pnpm nx build landing"
   publish = "dist/apps/landing/.next"
